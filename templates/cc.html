@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <style type="text/css">
+
+            body {font-family:Arial, Sans-Serif;}
+
+            #currency_form {width:300px; margin:0 auto;}
+			form label {display:inline-block; width:140px;
+
+            form .line {clear:both;}
+            form .line.submit {text-align:right;}
+			
+            
+
+
+
+        </style>
+	</head>
+	<body>
+		<div id="currency_form">
+			<form>
+				<h1> Currency Rate Converter</h1>
+				<!--TODO: Get currency list from text file*/ -->
+				<div class="line">
+					<label for="Currency_from">From:  </label>
+					<select name="Currency">
+						<option value="USD">USD</option>
+						<option value="INR">INR</option>
+						<option value="EUR">EUR</option>
+						<option value="AUD">AUD</option>
+					</select>
+				<!--TODO: Get currency list from text file -->
+				<div class="line">
+					<label for="Currency_to">To:  </label>
+					<select name="Currency">
+						<option value="USD">USD</option>
+						<option value="INR">INR</option>
+						<option value="EUR">EUR</option>
+						<option value="AUD">AUD</option>
+					</select>
+						
+				</div>
+				<div class="line">
+					<label for="Value">Value:  </label>
+					<input type=text id="value" />
+				</div>
+				<div class="lineconvert">
+					<input type="submit" value="Convert" />
+				</div>
+				
+			</form>
+		</div>
+		
+			
+	</body>
+<html>
