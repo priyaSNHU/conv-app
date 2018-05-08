@@ -19,12 +19,12 @@
 	</head>
 	<body>
 		<div id="currency_form">
-			<form>
+			<form action="/result">
 				<h1> Currency Rate Converter</h1>
 				<!--TODO: Get currency list from text file*/ -->
 				<div class="line">
 					<label for="Currency_from">From:  </label>
-					<select name="Currency">
+					<select name="currency_from">
 						<option value="USD">USD</option>
 						<option value="INR">INR</option>
 						<option value="EUR">EUR</option>
@@ -33,7 +33,7 @@
 				<!--TODO: Get currency list from text file -->
 				<div class="line">
 					<label for="Currency_to">To:  </label>
-					<select name="Currency">
+					<select name="currency_to">
 						<option value="USD">USD</option>
 						<option value="INR">INR</option>
 						<option value="EUR">EUR</option>
@@ -43,7 +43,7 @@
 				</div>
 				<div class="line">
 					<label for="Value">Value:  </label>
-					<input type=text id="value" />
+					<input type=text id="value" name="amount"/>
 				</div>
 				<div class="lineconvert">
 					<input type="submit" value="Convert" />
